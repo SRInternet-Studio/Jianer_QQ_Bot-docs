@@ -7,6 +7,7 @@ export default defineConfig({
   description: "开源 · 模块化 · 易于配置",
   lastUpdated: true,
   base: '/',
+  ignoreDeadLinks: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-
     nav: [
