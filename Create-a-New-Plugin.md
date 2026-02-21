@@ -25,6 +25,11 @@ NEXT PREVIEW 分支是**预览分支**，插件兼容性有待评估，投入实
 - `setup.py` 与单个文件形式的插件具有相同的编写规范
 :::
 
+::: warning 关于插件存放路径
+- 简儿的所有插件军存放在简儿根目录下的`plugins`文件夹下，简儿的插件加载器也默认会从这个目录下加载插件
+- 不要把简儿的插件和NapCat的插件弄混了！NapCat的插件与简儿的插件并无任何关联
+:::
+
 ### 插件的启用与禁用
 
 无论任何形式的插件，当其文件名以 **`d_`** 开头时（如 `d_something.py`），将会被忽略加载，即为 **已禁用插件**。
@@ -215,5 +220,6 @@ async def on_message(event, actions, Events, Manager, Segments):
 简儿 NEXT 3 支持从插件市场获取社区制作的插件。
 
 🔗 [Jianer 插件索引](https://github.com/IntelliMarkets/Jianer_Plugins_Index)
+
 
 欢迎社区开发者提交你的插件！
