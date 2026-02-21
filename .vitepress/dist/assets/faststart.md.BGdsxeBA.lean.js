@@ -1,1 +1,0 @@
-import{_ as a,c as t,o as i,ae as e}from"./chunks/framework.58IBamlh.js";const g=JSON.parse('{"title":"快速开始","description":"","frontmatter":{},"headers":[],"relativePath":"faststart.md","filePath":"faststart.md"}'),n={name:"faststart.md"};function l(p,s,o,r,h,d){return i(),t("div",null,s[0]||(s[0]=[e("",38)]))}const k=a(n,[["render",l]]);export{g as __pageData,k as default};
