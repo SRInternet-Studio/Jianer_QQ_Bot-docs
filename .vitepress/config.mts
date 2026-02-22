@@ -36,6 +36,7 @@ export default defineConfig({
       {
         text: '使用指南',
         items: [
+          { text: '日常使用指南', link: '/guide/daily-use' },
           { text: '配置 AI 功能', link: '/Configuring-AI-Functions' },
           { text: '配置用户组', link: '/Configure-User-Group' },
           { text: 'NapCatQQ 教程', link: '/NapCatQQ使用教程' },
@@ -56,10 +57,21 @@ export default defineConfig({
     },
     sidebar: [
       {
-        text: '入门',
+        text: '部署教程',
         collapsed: false,
         items: [
           { text: '快速开始', link: '/faststart' },
+          { text: '① 下载简儿', link: '/guide/download' },
+          { text: '② 安装运行环境', link: '/guide/install-deps' },
+          { text: '③ 配置你的机器人', link: '/guide/configure' },
+          { text: '④ 启动并使用', link: '/guide/launch' },
+        ]
+      },
+      {
+        text: '使用指南',
+        collapsed: false,
+        items: [
+          { text: '日常使用指南', link: '/guide/daily-use' },
           { text: 'NapCatQQ 使用教程', link: '/NapCatQQ使用教程' },
         ]
       },

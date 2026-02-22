@@ -14,8 +14,8 @@ hero:
       text: 🚀 快速开始
       link: /faststart
     - theme: alt
-      text: 📖 插件开发
-      link: /Create-a-New-Plugin
+      text: 📖 使用指南
+      link: /guide/daily-use
     - theme: alt
       text: GitHub
       link: https://github.com/SRInternet-Studio/Jianer_QQ_bot
@@ -23,12 +23,14 @@ hero:
 features:
   - icon: 🤖
     title: 多模型 AI 对话
-    details: 原生支持 DeepSeek、Google Gemini 2.0 Thinking、ChatGPT 等主流模型。按用户分别存储预设和上下文，支持角色扮演与 EdgeTTS 语音回复。
+    details: 原生支持 DeepSeek、Google Gemini、ChatGPT 等主流模型。按用户分别存储预设和上下文，支持角色扮演与 EdgeTTS 语音回复。
     link: /Configuring-AI-Functions
     linkText: 配置 AI →
   - icon: 🎨
     title: 丰富的娱乐功能
-    details: ACG 动漫生图、Pixiv 搜图、第二代名人名言（文字转图片）、大头照、Hitokoto 一言等原生插件，为你的群聊增添无穷乐趣。
+    details: ACG 动漫生图、Pixiv 搜图、名人名言（文字转图片）、大头照、Hitokoto 一言等原生插件，为你的群聊增添无穷乐趣。
+    link: /guide/daily-use
+    linkText: 了解功能 →
   - icon: 🛡️
     title: 全面的群管工具
     details: 撤回、禁言、踢人、退群、定时群发消息、加群自动审批、QQ 号核验等功能一应俱全，让群管理轻松高效。
@@ -47,4 +49,6 @@ features:
   - icon: 🌟
     title: 更多特色功能
     details: 入群欢迎、定时群发消息、runcommand 执行系统命令、配置向导 GUI、三级权限用户组管理……持续更新中！
+    link: /guide/daily-use
+    linkText: 查看全部 →
 ---
