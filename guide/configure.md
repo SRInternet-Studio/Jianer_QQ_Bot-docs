@@ -131,6 +131,7 @@ python SetupWizard.pyw
 | `Others.bot_name` | 给你的机器人取一个中文名字（**不能叫"简儿"**，详见下方声明） |
 | `Others.bot_name_en` | 给你的机器人取一个英文名字 |
 | `Others.ROOT_User` | 填写你自己（机器人主人）的 QQ 号。例如：`["9876543210"]`。**强烈建议填写**，否则你无法使用管理指令 |
+| `Others.default_mode` | 默认AI模式 | 见[AI相关变量第一个](/api-reference.html#ai-相关) |
 
 #### 连接相关配置
 
