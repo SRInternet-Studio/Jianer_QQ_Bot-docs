@@ -131,7 +131,7 @@ python SetupWizard.pyw
 | `Others.bot_name` | 给你的机器人取一个中文名字（**不能叫"简儿"**，详见下方声明） |
 | `Others.bot_name_en` | 给你的机器人取一个英文名字 |
 | `Others.ROOT_User` | 填写你自己（机器人主人）的 QQ 号。例如：`["9876543210"]`。**强烈建议填写**，否则你无法使用管理指令 |
-| `Others.default_mode` | 默认AI模式 | 见[AI相关变量第一个](/api-reference.html#ai-相关) |
+
 
 #### 连接相关配置
 
@@ -155,6 +155,7 @@ python SetupWizard.pyw
 | `Others.deepseek_key` | DeepSeek 的 API Key，留空则不启用 DeepSeek | 空 |
 | `Others.TTS` | EdgeTTS 语音回复相关设置（音色、语速、音量、音调） | 见上方默认值 |
 | `Others.compliment` | 当用户夸机器人时的回复列表。可以随意自定义 | 见上方默认值 |
+| `Others.default_mode` | 默认AI模式 | 见[AI相关变量第一个](/api-reference.html#ai-相关) |
 
 ::: tip 关于 AI 功能
 AI 功能的 API Key 不是必填项。如果你现在还不需要 AI 对话功能，可以全部留空，之后再按需配置。详见 [配置 AI 功能](/Configuring-AI-Functions)。
