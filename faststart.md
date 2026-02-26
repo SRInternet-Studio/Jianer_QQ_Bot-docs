@@ -26,6 +26,7 @@
 部署完毕之后，你也许会想了解：
 
 - 📖 [日常使用指南](/guide/daily-use) — 了解简儿有哪些功能，以及怎么在群里使用它
+- 🖥️ [WebUI 使用指南](/guide/webui) — 通过 Jianer WebUI 管理面板配置和管理你的机器人
 - 🤖 [配置 AI 功能](/Configuring-AI-Functions) — 让简儿拥有 AI 对话能力
 - 👥 [配置用户组](/Configure-User-Group) — 设置管理员权限
 

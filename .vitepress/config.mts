@@ -37,6 +37,7 @@ export default defineConfig({
         text: '使用指南',
         items: [
           { text: '日常使用指南', link: '/guide/daily-use' },
+          { text: 'WebUI 使用指南', link: '/guide/webui' },
           { text: '配置 AI 功能', link: '/Configuring-AI-Functions' },
           { text: '配置用户组', link: '/Configure-User-Group' },
           { text: 'NapCatQQ 教程', link: '/NapCatQQ使用教程' },
@@ -72,6 +73,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '日常使用指南', link: '/guide/daily-use' },
+          { text: 'WebUI 使用指南', link: '/guide/webui' },
           { text: 'NapCatQQ 使用教程', link: '/NapCatQQ使用教程' },
         ]
       },

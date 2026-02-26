@@ -39,31 +39,38 @@ QQ 服务器 ⇋ 协议端（NapCatQQ）⇋ 简儿机器人
 
 简儿提供了两种配置方式：**图形化配置向导**和**手动编辑配置文件**。
 
-### 方式一：图形化配置向导（推荐）
+### 方式一：Jianer WebUI 图形化管理面板（推荐）
 
-简儿附带了一个图形化的设置向导程序，你只需要按照界面上的提示填写信息即可。
+简儿附带了一个现代化的 Web 管理面板 **Jianer WebUI**，通过浏览器即可完成所有配置操作。
 
 在简儿程序目录下，运行：
 
 ```shell
-python SetupWizard.pyw
+python app.py
 ```
 
-::: info 部分分支没有设置向导
-如果你使用的分支目录中没有 `SetupWizard.pyw` 文件，请使用下方的"手动配置"方式。
+启动后，在浏览器中打开 **`http://127.0.0.1:5000`** 即可访问 WebUI。
+
+::: info 找不到 app.py？
+如果你的分支目录中没有 `app.py` 文件，说明当前版本可能还未集成 WebUI，请使用下方的"手动配置"方式。
 :::
 
 **操作步骤：**
 
-1. 设置向导中有多个页面，**依次打开每一个页面**，把其中的每一项内容都填写完整
-2. 全部填完后，打开 **"核对并应用设置"** 页面
-3. 检查一遍你填写的内容，确认无误后点击 **"应用"** 按钮
-4. 当页面标题显示 **"已成功保存"** 时，配置就完成了
+1. 在左侧导航菜单中，依次打开以下页面并填写信息：
+   - **基本信息设置**：机器人名称、管理员 QQ、触发符号、登录 QQ 号
+   - **AI 设置**：填写各 AI 模型的 API Key（可选，之后再配也行）
+   - **高级设置**：确认连接 Host 和 Port（需与 NapCatQQ 的 WebSocket 端口一致）
+2. 全部填完后，点击左侧导航的 **"核对并应用设置"**
+3. 检查一遍 JSON 格式的配置预览，确认无误后点击 **"应用"** 按钮
+4. 看到 **"已成功保存"** 提示时，配置就完成了
 
-如果应用时出现了错误提示，请仔细阅读下方文本框中的报错信息，通常是某项内容填写有误导致的。
+::: tip WebUI 功能远不止于此
+除了基础配置，WebUI 还提供了 **AI 预设管理**、**插件中心**、**NapCat 一键部署**、**Jianer 进程管理** 等高级功能。详见 [WebUI 使用指南](/guide/webui)。
+:::
 
 ::: tip 无桌面环境的 Linux 服务器怎么办？
-你可以先在一台有图形界面的 Windows电脑上运行 SetupWizard.pyw，完成配置后，将根目录下生成的 `config.json` 和 `prerequisites.py` 文件复制到你的 Linux 服务器上即可。
+WebUI 是基于 Web 的，你可以通过 SSH 隧道或者修改监听地址来远程访问。也可以先在本地电脑上使用 WebUI 完成配置，然后将 `config.json` 复制到服务器上。
 :::
 
 ### 方式二：手动编辑配置文件
@@ -132,7 +139,6 @@ python SetupWizard.pyw
 | `Others.bot_name_en` | 给你的机器人取一个英文名字 |
 | `Others.ROOT_User` | 填写你自己（机器人主人）的 QQ 号。例如：`["9876543210"]`。**强烈建议填写**，否则你无法使用管理指令 |
 
-
 #### 连接相关配置
 
 | 配置项 | 说明 |
@@ -146,16 +152,17 @@ python SetupWizard.pyw
 | --- | --- | --- |
 | `black_list` | 黑名单。列表中 QQ 号发送的消息会被机器人忽略 | 空 |
 | `silents` | 静默群列表。机器人在这些群中不会主动说话 | 空 |
-| `Log_level` | 日志详细程度。可选：`DEBUG`（最详细）、`INFO`、`WARNING`、`ERROR` | `DEBUG` |
+| `Log_level` | 日志详细程度。可选：`DEBUG`（最详细）、`TRACE`、`INFO`、`WARNING`、`ERROR`、`CRITICAL` | `DEBUG` |
 | `Others.reminder` | 触发符号。用户发送消息时以此符号开头，机器人才会响应。例如设为 `~` 后，用户需要发送 `~帮助` 才能触发"帮助"功能 | `~` |
 | `Others.slogan` | 机器人的宣传标语，会在部分场景中展示 | `简单 可爱 个性 全知` |
+| `Others.default_mode` | 默认的 AI 回复模型。可选：`DeepSeek`、`Google Gemini`、`ChatGPT-4`、`ChatGPT-3.5` | `DeepSeek` |
 | `Others.Auto_approval` | 加群自动审批。当机器人是群管理员时，如果入群申请的答案匹配这个列表中的内容，就自动通过 | 空 |
 | `Others.gemini_key` | Google Gemini 的 API Key，留空则不启用 Gemini | 空 |
 | `Others.openai_key` | ChatGPT 的 API Key，留空则不启用 ChatGPT | 空 |
 | `Others.deepseek_key` | DeepSeek 的 API Key，留空则不启用 DeepSeek | 空 |
 | `Others.TTS` | EdgeTTS 语音回复相关设置（音色、语速、音量、音调） | 见上方默认值 |
 | `Others.compliment` | 当用户夸机器人时的回复列表。可以随意自定义 | 见上方默认值 |
-| `Others.default_mode` | 默认AI模式 | 见[AI相关变量第一个](/api-reference.html#ai-相关) |
+| `Others.poke_rejection_phrases` | 当用户戳一戳机器人时的拒绝语列表 | 空 |
 
 ::: tip 关于 AI 功能
 AI 功能的 API Key 不是必填项。如果你现在还不需要 AI 对话功能，可以全部留空，之后再按需配置。详见 [配置 AI 功能](/Configuring-AI-Functions)。

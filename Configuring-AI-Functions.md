@@ -38,7 +38,7 @@ pip install openai>=1.60.2 -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 同时，我们的中转 API 提供商正在发放免费的 API Key ，您可以 [在这里直接免费获取](https://github.com/popjane/free_chatgpt_api) 。
 
-获取到 API Key 之后，在 `SetupWizard.pyw` 中的 "AI 设置" 页面填写，或者手动编辑 `config.json` 中的 `Others.openai_key` 字段。
+获取到 API Key 之后，在 Jianer WebUI 的 **"AI 设置"** 页面填写，或者手动编辑 `config.json` 中的 `Others.openai_key` 字段。
 
 成功应用设置后，你就可以开启你的 ChatGPT 畅聊之旅啦！
 
@@ -57,7 +57,7 @@ DeepSeek 是简儿 NEXT 3 新增支持的国产大模型，无需代理即可在
 
 ### 2. 填写 API Key
 
-获取到 API Key 之后，在 `SetupWizard.pyw` 中的 "AI 设置" 页面填写，或者手动编辑 `config.json` 中的 `Others.deepseek_key` 字段。
+获取到 API Key 之后，在 Jianer WebUI 的 **"AI 设置"** 页面填写，或者手动编辑 `config.json` 中的 `Others.deepseek_key` 字段。
 
 ::: tip
 DeepSeek 兼容 OpenAI API 格式，如果你使用的是第三方中转服务（如 OneAPI），也可以通过 OpenAI 的配置项来调用。
@@ -121,7 +121,7 @@ pip install google-generativeai==0.7.2 -i https://pypi.tuna.tsinghua.edu.cn/simp
 
 ### 4. 填写 API Key
 
-获取到 API Key 之后，在 `SetupWizard.pyw` 中的 "AI 设置" 页面填写，或者手动编辑 `config.json` 中的 `Others.gemini_key` 字段。
+获取到 API Key 之后，在 Jianer WebUI 的 **"AI 设置"** 页面填写，或者手动编辑 `config.json` 中的 `Others.gemini_key` 字段。
 
 成功应用设置后，你就可以开启你的 Gemini 畅聊之旅啦！
 
