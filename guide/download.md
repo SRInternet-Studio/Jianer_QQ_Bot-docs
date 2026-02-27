@@ -20,7 +20,16 @@
 GitHub 默认会下载 `main` 分支的代码。如果你想使用最新的 **NEXT 3 预览版**，你需要在页面左上角的分支选择器中切换到 `NEXT-PREVIEW` 分支，然后再点击 **Download ZIP**。
 :::
 
-## 方式二：使用 Git 克隆（推荐有经验的用户）
+## 方式二：通过 Release 下载（最推荐！）
+
+简儿的每次重要更新或预览版发布时，都会在 Release 页面提供固定的代码包。如果你希望下载某个固定版本的代码，这是最适合的方法：
+
+1. 在浏览器中打开[简儿的 GitHub Releases 页面](https://github.com/SRInternet-Studio/Jianer_QQ_bot/releases)
+2. 找到最新的正式发行版（Latest release）或预发布版（Pre-release）
+3. 在该版本说明最下面找到 **Assets** 区域，下载 `Jianer_Next_QQ_Bot.zip` 压缩包
+4. 下载完成后，把压缩包解压到你想要存放的目录下
+
+## 方式三：使用 Git 克隆（推荐有经验的用户）
 
 如果你的电脑上已经安装了 [Git](https://git-scm.com/)，你可以用命令行克隆仓库：
 
@@ -43,7 +52,7 @@ git checkout NEXT-PREVIEW
 NEXT 3 是简儿的下一个大版本，目前处于预览阶段。它在原来的基础上进行了大幅度的架构升级，新增了插件系统和 DeepSeek 等众多新功能。由于是预览版，可能存在少量不稳定的地方，但总体来说已经可以正常使用。**本文档的所有内容都基于 NEXT 3 预览版编写。**
 :::
 
-## 方式三：Fork 后再克隆（推荐开发者）
+## 方式四：Fork 后再克隆（推荐开发者）
 
 如果你打算在简儿的基础上做二次开发或者想长期保持更新，建议先 Fork 一份到你自己的 GitHub 账号下：
 
