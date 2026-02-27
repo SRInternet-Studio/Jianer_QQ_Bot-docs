@@ -1,9 +1,13 @@
 # Jianer WebUI 使用指南
 
-Jianer WebUI 是简儿 QQ 机器人附带的**现代化本地管理面板**，提供图形化的配置、插件管理和运行控制功能。它基于 Vue 3 + Naive UI 构建，通过浏览器访问。
+Jianer WebUI 是简儿 QQ 机器人附带的**现代化本地管理面板**，提供图形化的配置、插件管理和运行控制功能。它基于 Vue 3 + Naive UI + Vite 构建，通过浏览器访问。
 
 ::: tip 替代旧版
-Jianer WebUI 已取代旧版的 `SetupWizard.pyw`。如果你之前使用的是旧版设置向导，请升级到 Jianer WebUI 以获取更丰富的功能。
+Jianer WebUI 已取代旧版的 `SetupWizard.pyw`。如果你之前使用的是旧版设置向导，请升级到 Jianer Next3.1 以获取更丰富的功能。
+:::
+
+::: danger 关于WebUI稳定性
+WebUI现在处于公测阶段，可能会有少许bug以及一些灵异事件,敬请见谅
 :::
 
 ## 启动 WebUI
