@@ -16,7 +16,7 @@ export default defineConfig({
   ],
   themeConfig: {
     logo: '/tx.png',
-    siteTitle: '简儿 Docs',
+    siteTitle: '简儿 文档',
     search: {
       provider: 'local',
       options: {
