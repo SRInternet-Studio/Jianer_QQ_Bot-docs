@@ -26,6 +26,7 @@ python app.py
 npm run dev
 ```
 开发模式下前端地址为 `http://127.0.0.1:5174`，API 请求会自动代理到后端。
+若您想在开发模式下运行,请访问[Jianer_SetupWizard](https://github.com/SRInternet-Studio/Jianer_SetupWizard)
 :::
 
 ## 功能页面概览
