@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "简儿 Jianer"
+  name: "简儿"
   text: "NEXT 3"
   tagline: 开源 · 模块化 · 易于配置 —— 基于 OneBot v11 的新一代 QQ 群机器人
   image:
