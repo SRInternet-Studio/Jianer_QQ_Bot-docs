@@ -8,8 +8,8 @@
 
 | 简儿版本 | Python 要求 | 推荐版本 |
 | --- | --- | --- |
-| 简儿 2 / 简儿 3（旧版） | Python >= **3.9** | **3.10+** |
-| 简儿 NEXT 3（带有 NEXT 字样） | Python > **3.11** | **3.12+** |
+| 简儿 2 / 简儿 3（旧版） | Python >= **3.9** , < **3.14** | **3.12.x** |
+| 简儿 NEXT 3（带有 NEXT 字样） | Python > **3.11** , < **3.14** | **3.12.x** |
 
 ::: danger 版本不符会怎样？
 如果你使用了过低版本的 Python 来运行 NEXT 3，程序会直接报错退出，提示类似 `SyntaxError: f-string: unmatched '['` 的错误——这是因为 NEXT 3 使用了较新的 Python 语法特性（如嵌套 f-string），只有 Python 3.12 及以上才支持。
@@ -18,6 +18,9 @@
 ### Windows 用户
 
 1. 前往 [Python 官方网站](https://www.python.org/downloads/) 下载最新版 Python 安装程序
+
+   > 如果你无法前往官方网站，也可以直接点击这里 [下载 Python 3.12.7](https://mirrors.aliyun.com/python-release/windows/python-3.12.7-amd64.exe)
+
 2. 运行安装程序时，**务必勾选** "Add Python to PATH"（添加 Python 到系统环境变量）这个选项
 3. 点击 "Install Now" 完成安装
 
