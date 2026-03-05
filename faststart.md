@@ -1,3 +1,5 @@
+<img width="820" height="349" alt="Jianer_NEXT3_Poster" src="https://aki.ae-3803.com/https%3A%2F%2Fgithub-production-user-asset-6210df.s3.amazonaws.com%2F89620382%2F557297070-80316009-29a4-475f-ad62-6bac078fbffb.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAVCODYLSA53PQK4ZA%252F20260305%252Fus-east-1%252Fs3%252Faws4_request%26X-Amz-Date%3D20260305T040505Z%26X-Amz-Expires%3D300%26X-Amz-Signature%3D9e704aa6dc8df8f7c7e2f70a5e382d20663255462409984c303a0c2316020c61%26X-Amz-SignedHeaders%3Dhost" />
+
 # 快速开始
 
 欢迎使用 **简儿 QQ 机器人**！🎉
@@ -38,4 +40,5 @@
 官方简儿机器人QQ号：`2399451783`
 
 如果你在官方 QQ 群中向群主申请并通过，你可以获得官方 QQ 机器人的不定期使用权以在自己的群聊中使用，而无需自行部署。但注意，我们不对机器人在你的群聊中产生的任何消息负责，且官方的简儿机器人将始终受到我们的管理和约束，我们可能随时通知并收回你的使用权。为此，**我们更推荐你自行部署机器人**，以充分发挥简儿的全部技能。
+
 :::
