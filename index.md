@@ -4,51 +4,51 @@ layout: home
 
 hero:
   name: "简儿"
-  text: "NEXT 3"
-  tagline: 开源 · 模块化 · 易于配置 —— 基于 OneBot v11 的新一代 QQ 群机器人
+  text: "QQ 机器人"
+  tagline: 开源 · 模块化 · 生产级 —— 新一代 QQ 群机器人框架
   image:
     src: /tx.png
     alt: 简儿 QQ 机器人
   actions:
     - theme: brand
-      text: 🚀 快速开始
+      text: 🆕 NEXT 5 快速开始
+      link: /next5/quickstart
+    - theme: alt
+      text: 📦 NEXT 5 部署指南
+      link: /next5/deployment
+    - theme: alt
+      text: NEXT 3 文档
       link: /faststart
-    - theme: alt
-      text: 📖 使用指南
-      link: /guide/daily-use
-    - theme: alt
-      text: GitHub
-      link: https://github.com/SRInternet-Studio/Jianer_QQ_bot
 
 features:
+  - icon: 🆕
+    title: NEXT 5 - 全新架构升级
+    details: 基于 JianerCore 框架，完整的长期记忆系统、内容审核、Agent 工具、状态化网页浏览器和完整的舞萌 DX 支持。生产级架构，插件热重载。
+    link: /next5/quickstart
+    linkText: 了解 NEXT 5 →
   - icon: 🤖
-    title: 多模型 AI 对话
-    details: 原生支持 DeepSeek、Google Gemini、ChatGPT 等主流模型。按用户分别存储预设和上下文，支持角色扮演与 EdgeTTS 语音回复。
-    link: /Configuring-AI-Functions
-    linkText: 配置 AI →
-  - icon: 🎨
-    title: 丰富的娱乐功能
-    details: ACG 动漫生图、Pixiv 搜图、名人名言（文字转图片）、大头照、Hitokoto 一言等原生插件，为你的群聊增添无穷乐趣。
-    link: /guide/daily-use
-    linkText: 了解功能 →
-  - icon: 🛡️
-    title: 全面的群管工具
-    details: 撤回、禁言、踢人、退群、定时群发消息、加群自动审批、QQ 号核验等功能一应俱全，让群管理轻松高效。
-    link: /Configure-User-Group
-    linkText: 了解权限 →
-  - icon: 🧩
+    title: 多模型 AI 对话与 Agent
+    details: 支持 DeepSeek、Gemini、ChatGPT、Claude 等主流模型。内置网页搜索、GitHub 仓库、网页浏览器、天气查询等丰富 Agent 工具。
+    link: /next5/jianer-ai
+    linkText: JianerAI 功能 →
+  - icon: 🧠
+    title: 长期记忆系统
+    details: 按人设隔离的规范化 SQLite 存储，支持个人记忆、群记忆、对话片段和证据摘要。后台异步记忆审查，不阻塞用户交互。
+    link: /next5/memory
+    linkText: 记忆架构 →
+  - icon: 🎮
+    title: 舞萌 DX 完整支持
+    details: 移植 nonebot-plugin-maimaidx v3.0.13，支持水鱼与落雪查分器、OAuth 无回调绑定、B50/成绩/曲目/别名/猜歌，集成 Agent 工具。
+    link: /next5/maimaidx
+    linkText: 舞萌功能 →
+  - icon: 🔌
     title: 强大的插件系统
-    details: 基于 HypeR_Bot 框架，功能全面插件化。仅需 5 行代码即可开发一个插件，支持热重载、启用/禁用管理和插件市场。
-    link: /Create-a-New-Plugin
+    details: 基于 JianerCore PluginManager + Alconna Command 开发。支持热重载、启用/禁用管理、依赖声明和生命周期钩子。NEXT 3 同样保留完整插件系统。
+    link: /next5/plugin-dev
     linkText: 开发插件 →
-  - icon: ⚡
-    title: 灵活的协议适配
-    details: 官方推荐使用稳定强大的 NapCatQQ 作为主流协议端（Lagrange.OneBot 已过时）。通过 WebSocket 连接，适配 Windows 和 Linux 全平台部署。
-    link: /NapCatQQ使用教程
-    linkText: 协议配置 →
-  - icon: 🌟
-    title: 更多特色功能
-    details: 入群欢迎、定时群发消息、runcommand 执行系统命令、Jianer WebUI 图形化管理面板、NapCat 一键部署、三级权限用户组管理……持续更新中！
-    link: /guide/webui
-    linkText: WebUI 指南 →
+  - icon: 🛡️
+    title: 生产级架构
+    details: 多协议适配（OneBot/Milky/飞书/Kritor）、插件沙箱隔离、原子化热重载、优雅关闭与完整的权限组管理。
+    link: /next5/deployment
+    linkText: 部署文档 →
 ---

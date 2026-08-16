@@ -32,9 +32,19 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: '快速开始', link: '/faststart' },
+      { 
+        text: 'NEXT 5 🆕', 
+        items: [
+          { text: '🚀 快速开始', link: '/next5/quickstart' },
+          { text: '📦 部署指南', link: '/next5/deployment' },
+          { text: '🤖 JianerAI', link: '/next5/jianer-ai' },
+          { text: '🎮 舞萌 DX', link: '/next5/maimaidx' },
+          { text: '🔌 插件开发', link: '/next5/plugin-dev' },
+        ]
+      },
+      { text: 'NEXT 3 快速开始', link: '/faststart' },
       {
-        text: '使用指南',
+        text: 'NEXT 3 使用指南',
         items: [
           { text: '日常使用指南', link: '/guide/daily-use' },
           { text: 'WebUI 使用指南', link: '/guide/webui' },
@@ -46,7 +56,8 @@ export default defineConfig({
       {
         text: '开发',
         items: [
-          { text: '插件开发指南', link: '/Create-a-New-Plugin' },
+          { text: 'NEXT 5 插件开发', link: '/next5/plugin-dev' },
+          { text: 'NEXT 3 插件开发', link: '/Create-a-New-Plugin' },
           { text: 'API 参考', link: '/api-reference' },
         ]
       },
@@ -56,51 +67,96 @@ export default defineConfig({
       pattern: 'https://github.com/SRInternet-Studio/Jianer_QQ_Bot-docs/edit/main/:path',
       text: '在 GitHub 上编辑此页'
     },
-    sidebar: [
-      {
-        text: '部署教程',
-        collapsed: false,
-        items: [
-          { text: '快速开始', link: '/faststart' },
-          { text: '① 下载简儿', link: '/guide/download' },
-          { text: '② 安装运行环境', link: '/guide/install-deps' },
-          { text: '③ 配置你的机器人', link: '/guide/configure' },
-          { text: '④ 启动并使用', link: '/guide/launch' },
-        ]
-      },
-      {
-        text: '使用指南',
-        collapsed: false,
-        items: [
-          { text: '日常使用指南', link: '/guide/daily-use' },
-          { text: 'WebUI 使用指南', link: '/guide/webui' },
-          { text: 'NapCatQQ 使用教程', link: '/NapCatQQ使用教程' },
-        ]
-      },
-      {
-        text: '配置',
-        collapsed: false,
-        items: [
-          { text: '配置 AI 功能', link: '/Configuring-AI-Functions' },
-          { text: '配置用户组', link: '/Configure-User-Group' },
-        ]
-      },
-      {
-        text: '开发者',
-        collapsed: false,
-        items: [
-          { text: '插件开发指南', link: '/Create-a-New-Plugin' },
-          { text: 'API 参考', link: '/api-reference' },
-        ]
-      },
-      {
-        text: '其它',
-        collapsed: false,
-        items: [
-          { text: '问题与解决方法汇总', link: '/简儿问题&解决方法汇总' },
-        ]
-      },
-    ],
+    sidebar: {
+      '/next5/': [
+        {
+          text: '简儿 NEXT 5',
+          items: [
+            { text: '🏠 概览', link: '/next5/index' },
+            { text: '🚀 快速开始', link: '/next5/quickstart' },
+            { text: '📦 部署指南', link: '/next5/deployment' },
+          ]
+        },
+        {
+          text: '核心功能',
+          items: [
+            { text: '🤖 JianerAI', link: '/next5/jianer-ai' },
+            { text: '🧠 长期记忆系统', link: '/next5/memory' },
+            { text: '🎮 舞萌 DX', link: '/next5/maimaidx' },
+          ]
+        },
+        {
+          text: '配置与管理',
+          items: [
+            { text: '🌐 协议配置', link: '/next5/protocols' },
+            { text: '👥 用户组与权限', link: '/next5/user-groups' },
+          ]
+        },
+        {
+          text: '开发者',
+          items: [
+            { text: '🔌 插件开发指南', link: '/next5/plugin-dev' },
+          ]
+        },
+      ],
+      '/': [
+        {
+          text: '简儿 NEXT 5 🆕',
+          collapsed: true,
+          items: [
+            { text: '🏠 NEXT 5 概览', link: '/next5/index' },
+            { text: '🚀 快速开始', link: '/next5/quickstart' },
+            { text: '📦 部署指南', link: '/next5/deployment' },
+            { text: '🤖 JianerAI', link: '/next5/jianer-ai' },
+            { text: '🎮 舞萌 DX', link: '/next5/maimaidx' },
+            { text: '🔌 插件开发', link: '/next5/plugin-dev' },
+          ]
+        },
+        {
+          text: 'NEXT 3 部署教程',
+          collapsed: false,
+          items: [
+            { text: '快速开始', link: '/faststart' },
+            { text: '① 下载简儿', link: '/guide/download' },
+            { text: '② 安装运行环境', link: '/guide/install-deps' },
+            { text: '③ 配置你的机器人', link: '/guide/configure' },
+            { text: '④ 启动并使用', link: '/guide/launch' },
+          ]
+        },
+        {
+          text: 'NEXT 3 使用指南',
+          collapsed: false,
+          items: [
+            { text: '日常使用指南', link: '/guide/daily-use' },
+            { text: 'WebUI 使用指南', link: '/guide/webui' },
+            { text: 'NapCatQQ 使用教程', link: '/NapCatQQ使用教程' },
+          ]
+        },
+        {
+          text: 'NEXT 3 配置',
+          collapsed: false,
+          items: [
+            { text: '配置 AI 功能', link: '/Configuring-AI-Functions' },
+            { text: '配置用户组', link: '/Configure-User-Group' },
+          ]
+        },
+        {
+          text: '开发者',
+          collapsed: false,
+          items: [
+            { text: 'NEXT 3 插件开发', link: '/Create-a-New-Plugin' },
+            { text: 'API 参考', link: '/api-reference' },
+          ]
+        },
+        {
+          text: '其它',
+          collapsed: false,
+          items: [
+            { text: '问题与解决方法汇总', link: '/简儿问题&解决方法汇总' },
+          ]
+        },
+      ]
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/SRInternet-Studio/Jianer_QQ_bot/' }
     ],
